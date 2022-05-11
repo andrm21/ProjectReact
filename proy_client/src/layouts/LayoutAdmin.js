@@ -17,7 +17,7 @@ export default function LayoutAdmin() {
             setMenuCollapsed={setMenuCollapsed}
           />
         </Header>
-        <Content className='layout.admin-content'>
+        <Content className='layout-admin-content'>
           <h1>Rutas</h1>
         </Content>
         <Footer className='layout-admin-footer'>MERN React</Footer>

@@ -14,13 +14,13 @@
             color: $font-grey-dark;
         }
     }
-    &__left {
+    &-left {
         &-logo {
             width: 80px;
             padding: 0 10px;
         }
     }
-    &__right {
+    &-right {
         position: absolute;
         right: 0;
     }
