@@ -18,6 +18,9 @@
 
     }
     &__footer {
-        padding: 20px;
+        position:absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
     }
 }

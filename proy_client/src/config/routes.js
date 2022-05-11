@@ -7,7 +7,7 @@ import Home from "../pages/home";
 import AdminSignIn from "../pages/Admin/signIn";
 import Contact from "../pages/contact";
 
-const routes = [
+const routesAdmin = [
   {
     path: "/admin",
     layout: LayoutAdmin,
@@ -20,31 +20,27 @@ const routes = [
   },
 ];
 
-  const routesClient = [
+const routesClient = [
   {
-  path: "/",
-    layout: LayoutPageNotFound,
-    component: AdminHome,
+    path: "/",
+    layout: LayoutBasic,
     component: Home,
   },
   {
     path: "/contact",
-      layout: LayoutBasic,
-      component: AdminHome,
-      component: Contact,
-    },
+    layout: LayoutBasic,
+    component: Contact,
+  },
 ];
 
 const routesNotFound = [
   {
-  path: "*",
+    path: "*",
     layout: LayoutBasic,
-    component: AdminHome,
     component: LayoutPageNotFound,
   },
 ];
 
-const routes = [...routesAdmin,...routesClient,...routesNotFound];
-
+const routes = [...routesAdmin, ...routesClient, ...routesNotFound];
 
 export default routes;
